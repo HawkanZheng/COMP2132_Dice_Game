@@ -42,7 +42,7 @@ img {
 
 button {
     height: auto;
-    width: 200px;
+    
     font-size: larger;
     border-radius: 5px;
     background-color: yellowgreen;
@@ -79,3 +79,24 @@ h1,h2,h3 {
 }
 
 
+@media (min-width:300px) { 
+    button {
+        width: 100px;
+    }
+    
+    img {
+        @include diceImg(75px);
+        text-align: center;
+    }
+}
+
+@media (min-width:1281px) {
+    button {
+        width: 200px;
+    }
+
+    img {
+        @include diceImg(200px);
+        text-align: center;
+    }
+}

@@ -92,7 +92,11 @@ function end_game() {
         gameResult.style.color = "red";
     }
     rollBtn.disabled = true;
+    
+    $("#gameResult").hide()
     gameResult.innerHTML = endGameMessage;
+    $("#gameResult").fadeIn();
+    
 }
 
 function calc_score(roll1, roll2) {

@@ -7,23 +7,26 @@
     
     <link rel="stylesheet" href="./styles/dice-game.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" defer></script>
     <script src="./scripts/dice_game.js" defer></script>
 </head> 
 <body>
     <div id="userDice">
         <h2 id="userScore">User Score:</h2>
         <h3 id="userRound">Round Score:</h3>
-        <img id="userDie1" src="./images/1-dice.png" alt="userDie1">
-        <img id="userDie2" src="./images/1-dice.png" alt="userDie2">
+        <img id="userDie1" class="userDice" src="./images/1-dice.png" alt="userDie1">
+        <img id="userDie2" class="userDice" src="./images/1-dice.png" alt="userDie2">
     </div>
     <div id="cpuDice">
         <h2 id="cpuScore">CPU Score:</h2>
         <h3 id="cpuRound">Round Score:</h3>
-        <img id="cpuDie1" src="./images/1-dice.png" alt="cpuDie1">
-        <img id="cpuDie2" src="./images/1-dice.png" alt="cpuDie2">
+        <img id="cpuDie1" class="cpuDice" src="./images/1-dice.png" alt="cpuDie1">
+        <img id="cpuDie2" class="cpuDice" src="./images/1-dice.png" alt="cpuDie2">
     </div>
-    <button id="roll">Roll!</button>
-    <button id="newGame">New Game</button>
+    <div id="buttons" class="flex centered">
+        <button id="roll">Roll!</button>
+        <button id="newGame">New Game</button>
+    </div>
     <h1 id="gameResult"></h1>
 </body>
 </html>

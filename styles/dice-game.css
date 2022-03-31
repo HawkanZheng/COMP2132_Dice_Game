@@ -11,6 +11,27 @@ body {
 img {
   height: 200px;
   width: auto;
+  text-align: center;
+}
+
+#userDice {
+  text-align: center;
+}
+
+.userDice {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cpuDice {
+  text-align: center;
+}
+
+.cpuDice {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 button {
@@ -19,7 +40,7 @@ button {
   font-size: larger;
   border-radius: 5px;
   background-color: yellowgreen;
-  text-align: center;
+  font-family: Audiowide;
 }
 
 button:hover {
@@ -29,9 +50,22 @@ button:hover {
 div {
   border-radius: 10px;
   background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: grey;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+div#buttons {
+  background-color: #91dce5;
+  border-style: none;
+  text-align: center;
 }
 
 h1, h2, h3 {
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
